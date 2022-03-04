@@ -1,6 +1,6 @@
 # oathtool
 A backup of these [scripts](https://www.cyberciti.biz/faq/use-oathtool-linux-command-line-for-2-step-verification-2fa/) used for oathtool OTP in CLI.<br>
-
+Author: Vivek Gite {https://www.cyberciti.biz/} under GPL v 2.x or above <br>
 ## Instructions:
 1. Install the required dependencies.
 ```
