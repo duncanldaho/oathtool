@@ -17,7 +17,7 @@ cd ~/.2fa/
 gpg2 --full-gen-key
 gpg --list-secret-keys --keyid-format LONG
 ```
-4. Place the encrypt and decrypt scripts inside ~/.2fa/ and update the UID and KID with your corresponding keys.
+4. Place the encrypt and decrypt scripts inside ~/.2fa/ and edit the scripts to include your KID and UID keys.
 5. Create a service directory to host the TOTP secret key.
 ```
 mkdir example.com
