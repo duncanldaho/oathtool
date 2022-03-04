@@ -1,5 +1,5 @@
 # oathtool
-A backup of the [scripts](https://www.cyberciti.biz/faq/use-oathtool-linux-command-line-for-2-step-verification-2fa/), used for oathtool OTP.<br>
+A backup of these [scripts](https://www.cyberciti.biz/faq/use-oathtool-linux-command-line-for-2-step-verification-2fa/) used for oathtool OTP in CLI.<br>
 
 ## Instructions:
 1. Install the required dependencies.
@@ -7,17 +7,17 @@ A backup of the [scripts](https://www.cyberciti.biz/faq/use-oathtool-linux-comma
 sudo apt update && sudo apt upgrade
 sudo apt install oathtool gnupg2
 ```
-2. Generate gpg2 keys, or use your preexisting keys.
-```
-gpg2 --full-gen-key
-gpg --list-secret-keys --keyid-format LONG
-```
-3. Make the required directories.
+2. Make the required directories.
 ```
 mkdir ~/.2fa/
 cd ~/.2fa/
 ```
-4. Place the encrypt and decrypt scripts inside ~/.2fa/
+3. Generate gpg2 keys, or use your preexisting keys.
+```
+gpg2 --full-gen-key
+gpg --list-secret-keys --keyid-format LONG
+```
+4. Place the encrypt and decrypt scripts inside ~/.2fa/ and update the UID and KID with your corresponding keys.
 5. Create a service directory to host the TOTP secret key.
 ```
 mkdir example.com
