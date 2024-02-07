@@ -5,11 +5,11 @@ Author: [Vivek Gite](https://www.cyberciti.biz/) under GPL.<br>
 1. Install the required dependencies.
 ```
 sudo apt update && sudo apt upgrade
-sudo apt install oathtool gnupg2
+sudo apt install oathtool gnupg2 xclip
 ```
 2. Make the required directories.
 ```
-mkdir ~/.2fa/
+mkdir -m 700 ~/.2fa/
 cd ~/.2fa/
 ```
 3. Generate gpg2 keys or use your preexisting keys.
