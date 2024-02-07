@@ -1,6 +1,6 @@
 # oathtool
-A backup of these [scripts](https://www.cyberciti.biz/faq/use-oathtool-linux-command-line-for-2-step-verification-2fa/) used for oathtool OTP in CLI.<br>
-Author: [Vivek Gite](https://www.cyberciti.biz/) under GPL v 2.x or above <br>
+A fork of these [scripts](https://www.cyberciti.biz/faq/use-oathtool-linux-command-line-for-2-step-verification-2fa/) used for oathtool OTP in CLI.<br>
+Author: [Vivek Gite](https://www.cyberciti.biz/) under GPL.<br>
 ## Instructions:
 1. Install the required dependencies.
 ```
@@ -18,10 +18,11 @@ gpg2 --full-gen-key
 gpg --list-secret-keys --keyid-format LONG
 ```
 4. Place the scripts inside ~/.2fa/ and edit the scripts to include your KID and UID.
-5. Create a service directory to host the TOTP secret key.
+5. Execute add.key.sh to add new services.
 ```
-mkdir example.com
-echo -n '<TOTP secret key>' > ~/.2fa/example.com/.key
+./add.key.sh
+Service name: example.com
+TOTP secret: xxxxxxxxxxxxxxxx
 ```
 6. Encrypt the TOTP secret key with gpg. Make sure to remove the regular file (example.com/.key) when prompted.
 ```
