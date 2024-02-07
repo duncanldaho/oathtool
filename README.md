@@ -12,7 +12,7 @@ sudo apt install oathtool gnupg2
 mkdir ~/.2fa/
 cd ~/.2fa/
 ```
-3. Generate gpg2 keys, or use your preexisting keys.
+3. Generate gpg2 keys or use your preexisting keys.
 ```
 gpg2 --full-gen-key
 gpg --list-secret-keys --keyid-format LONG
@@ -28,7 +28,7 @@ TOTP secret: xxxxxxxxxxxxxxxx
 ```
 ./encrypt.key.sh example.com
 ```
-7. Run decrypt.key.sh to decrypt the key and generate the 2fa code.
+7. Run decrypt.key.sh to decrypt the key and generate the two-factor authentication code.
 ```
 ./decrypt.key.sh example.com
 ```

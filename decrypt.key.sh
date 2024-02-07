@@ -29,7 +29,7 @@ kg="${k}.gpg"
 totp=$($_gpg2 --quiet -u "${kid}" -r "${uid}" --decrypt "$kg")
 
 # Generate 2FA totp code and display on screen
-echo "Your code for $s is:"
+echo "Two-Factor Authentication code for $s is:"
 code=$($_oathtool -b --totp "$totp")
 ## Copy to clipboard too ##
 ## if xclip command found  on Linux system ##
